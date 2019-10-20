@@ -70,10 +70,10 @@ return 0;
 A função troca_str não funciona pois a troca de valores está sendo efetuada apenas localmente dentro da função.
 Para arrumar isto basta reescrever a utilizando ponteiro de ponteiro, para mudar os 2 ponteiros das variaveis entre si:
 void troca_str (char **x, char **y) {
-char *tmp;
-tmp = *x;
-*x = *y;
-*y = tmp;
+	char *tmp;
+	tmp = *x;
+	*x = *y;
+	*y = tmp;
 }
 E a chamada fica deste jeito:
 troca_str (&s1, &s2);
