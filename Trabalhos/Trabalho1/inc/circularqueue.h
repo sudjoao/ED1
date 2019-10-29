@@ -1,9 +1,8 @@
-#ifndef STATICQUEUE_H
-#define STATICQUEUE_H
-#define N 5
-#include <stdio.h>
+#ifndef CIRCULARQUEUE_H
+#define CIRCULARQUEUE_H
+#define N 10
 typedef struct fila{
-    int v[N];
+    int * v;
     int u;
     int p;
 }fila;
@@ -15,5 +14,5 @@ int fila_cheia();
 int fila_vazia();
 int tamanho_fila();
 void mostra_fila();
+int redimensiona_fila();
 #endif
-
