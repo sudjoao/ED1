@@ -1,4 +1,5 @@
-#include "../inc/staticqueue.h"
+#include <stdio.h>
+#include "../inc/circularqueue.h"
 int main(){
 	int n, n_elem, elem, cont=0, rem_elem=0;
 	cria_fila();

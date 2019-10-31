@@ -27,8 +27,20 @@ int remove_elemento(){
 }
 
 void mostra_fila(){
-    printf("[");
-    for(int i=f.p; i<f.u; i++)
-        printf(" %d", f.v[i]);
-    printf(" ]\n");
+    if(fila_vazia())
+        printf("Fila está vazia\n");
+    else{
+        for(int i=0; i<N; i++)
+            printf("%d ", f.v[i]);
+        printf("\n");
+        for(int i=0; i<=N; i++){
+            if(i==f.p)
+                printf("p ");
+            if(i==f.u)
+                printf("u ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
 }
